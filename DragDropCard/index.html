@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Drag Drop Card with ECS</title>
+
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="./root.min.css" />
+
+        <!-- ===== BOX ICONS ===== -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+            rel="stylesheet"
+        />
+    </head>
+
+    <body>
+        <main class="drop">
+            <h2 style="text-align: center">Drag and Drop Card</h2>
+            <div class="drop__container" id="drop-items">
+                <!-- person 1 -->
+                <div class="drop__card">
+                    <div class="drop__data">
+                        <img
+                            src="./img/img1.jpg"
+                            alt="Drag and Drop card by hossain foysal"
+                            class="drop__img"
+                        />
+
+                        <div>
+                            <h1 class="drop__name">Mr Tesla</h1>
+                            <span class="drop__profession"
+                                >Full Stack Web Developer</span
+                            >
+                        </div>
+                    </div>
+
+                    <div>
+                        <a href="#" class="drop__social"
+                            ><i class="bx bxl-instagram"></i
+                        ></a>
+                        <a href="#" class="drop__social"
+                            ><i class="bx bxl-facebook"></i
+                        ></a>
+                        <a href="#" class="drop__social"
+                            ><i class="bx bxl-twitter"></i
+                        ></a>
+                    </div>
+                </div>
+
+                <!-- person 2 -->
+                <div class="drop__card">
+                    <div class="drop__data">
+                        <img
+                            src="./img/img3.jpg"
+                            alt="Drag and Drop card by hossain foysal"
+                            class="drop__img"
+                        />
+
+                        <div>
+                            <h1 class="drop__name">Mr Jhon</h1>
+                            <span class="drop__profession">Dev Ops</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <a href="#" class="drop__social"
+                            ><i class="bx bxl-instagram"></i
+                        ></a>
+                        <a href="#" class="drop__social"
+                            ><i class="bx bxl-facebook"></i
+                        ></a>
+                        <a href="#" class="drop__social"
+                            ><i class="bx bxl-twitter"></i
+                        ></a>
+                    </div>
+                </div>
+
+                <!-- person 3 -->
+                <div class="drop__card">
+                    <div class="drop__data">
+                        <img
+                            src="./img/img2.jpg"
+                            alt="Drag and Drop card by hossain foysal"
+                            class="drop__img"
+                        />
+
+                        <div>
+                            <h1 class="drop__name">Mrs Angela</h1>
+                            <span class="drop__profession"
+                                >Graphics Designer</span
+                            >
+                        </div>
+                    </div>
+
+                    <div>
+                        <a href="#" class="drop__social"
+                            ><i class="bx bxl-instagram"></i
+                        ></a>
+                        <a href="#" class="drop__social"
+                            ><i class="bx bxl-facebook"></i
+                        ></a>
+                        <a href="#" class="drop__social"
+                            ><i class="bx bxl-twitter"></i
+                        ></a>
+                    </div>
+                </div>
+
+                <!-- person 4 -->
+                <div class="drop__card">
+                    <div class="drop__data">
+                        <img
+                            src="./img/img4.jpg"
+                            alt="Drag and Drop card by hossain foysal"
+                            class="drop__img"
+                        />
+
+                        <div>
+                            <h1 class="drop__name">Mrs Taimiya</h1>
+                            <span class="drop__profession"
+                                >Digital Marketer</span
+                            >
+                        </div>
+                    </div>
+
+                    <div>
+                        <a href="#" class="drop__social"
+                            ><i class="bx bxl-instagram"></i
+                        ></a>
+                        <a href="#" class="drop__social"
+                            ><i class="bx bxl-facebook"></i
+                        ></a>
+                        <a href="#" class="drop__social"
+                            ><i class="bx bxl-twitter"></i
+                        ></a>
+                    </div>
+                </div>
+            </div>
+
+            <div style="width: 360px; text-align: center">
+                &copy; <span id="yearvalue">2022</span>.
+                <a href="hossainfoysal.com" style="color: #00a8ff"
+                    >Hossain Foysal</a
+                >. Build with 💙 from Bangladesh. All right reserved.
+            </div>
+        </main>
+
+        <script>
+            const year = new Date();
+            const gettheyear = year.getFullYear();
+            const yearel = document.querySelector("#yearvalue");
+            yearel.innerHTML = gettheyear;
+        </script>
+
+        <!--===== SORTABLE JS =====-->
+        <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="./root.min.js"></script>
+    </body>
+</html>

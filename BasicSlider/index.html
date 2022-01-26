@@ -1,61 +1,50 @@
 <!DOCTYPE html>
 
-
 <html lang="en">
+    <head>
+        <!-- meta section -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+        <title>Hossain Foysal - Basic Full Screen Image Slider</title>
 
-<head>
-    <!-- meta section -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <title>Full Screen Image Slider</title>
+        <!-- link section -->
+        <link rel="stylesheet" href="./slider.css" />
+    </head>
 
-    <!-- link section -->
-    <link rel="stylesheet" href="./slider.css" />
-</head>
+    <body>
+        <main>
+            <!-- make left arrow with css -->
+            <div id="arrow_left" class="arrow"></div>
 
+            <!-- make slider with 3 different slide -->
+            <div class="slider">
+                <!-- slide one -->
+                <div class="slide" id="one">
+                    <div class="slider_content">
+                        <h1>Slider One</h1>
+                    </div>
+                </div>
 
-<body>
-    
-    <main>
+                <!-- slide two -->
+                <div class="slide" id="two">
+                    <div class="slider_content">
+                        <h1>Slider Two</h1>
+                    </div>
+                </div>
 
-        <!-- make left arrow with css -->
-        <div id="arrow_left" class="arrow"></div>
-
-        <!-- make slider with 3 different slide -->
-        <div class="slider">
-
-            <!-- slide one -->
-            <div class="slide" id="one">
-                <div class="slider_content">
-                    <h1>Slider One</h1>
+                <!-- slide three -->
+                <div class="slide" id="three">
+                    <div class="slider_content">
+                        <h1>Slider Three</h1>
+                    </div>
                 </div>
             </div>
 
-            <!-- slide two -->
-            <div class="slide" id="two">
-                <div class="slider_content">
-                    <h1>Slider Two</h1>
-                </div>
-            </div>
+            <!-- make right arrow with css -->
+            <div id="arrow_right" class="arrow"></div>
+        </main>
 
-            <!-- slide three -->
-            <div class="slide" id="three">
-                <div class="slider_content">
-                    <h1>Slider Three</h1>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- make right arrow with css -->
-        <div id="arrow_right" class="arrow"></div>
-    
-    </main>
-
-    <script src="./slider.js"></script>
-</body>
-
-
+        <script src="./slider.js"></script>
+    </body>
 </html>
