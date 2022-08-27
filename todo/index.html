@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Page Title</title>
+    
+    <style>
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+
+      main {
+          margin: 2rem;
+      }
+
+      input {
+          padding: 0.5rem 0.7rem;
+          font-size: 1.2rem;
+          outline: none;
+          border: 1px solid #000;
+          border-radius: 0.3rem;
+      }
+
+      button {
+          padding: 0.5rem 1.5rem;
+          font-size: 1.2rem;
+          background-color: yellow;
+          color: #000;
+          border: 2px solid #000;
+          transition: 0.4s;
+          margin-left: 0.5rem;
+      }
+
+      button:hover {
+          background-color: #000;
+          color: yellow;
+          border-color: yellow;
+      }
+
+      ul {
+          list-style: none;
+          margin-top: 1rem;
+      }
+
+      ul li {
+          line-height: 1.2;
+          padding: 0.5rem 0.7rem;
+          border-radius: 0.3rem;
+          background-color: aquamarine;
+          margin-bottom: 1rem;
+
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+      }
+
+      .red {
+          padding: 0.2rem 0.5rem;
+          background-color: red;
+          color: #fff;
+          border-radius: 10px;
+      }
+    </style>
+	</head>
+	<body>
+		
+        <main>
+            <input
+                type="text"
+                placeholder="Type the task "
+            />
+            <button type="button">Add</button>
+
+            <ul>
+                
+            </ul>
+        </main>
+        
+    
+    <script>
+      const input=document.querySelector('input'),
+          button=document.querySelector('button'),
+          listparent=document.querySelector('ul');
+
+      button.addEventListener('click', () => {
+          inputcontent = input.value;
+          input.value = '';
+          injectedHTML = `<li>${inputcontent}<span class="red">Delete<span></li>`;
+          listparent.insertAdjacentHTML("afterbegin", injectedHTML);
+      })
+    </script>
+	</body>
+</html>
